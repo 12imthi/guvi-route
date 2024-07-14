@@ -1,0 +1,30 @@
+.navbar-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-custom .navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-custom .nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #007bff; /* Change this color to whatever you prefer */
+}
+
+.navbar-custom .nav-link:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff; /* Match the hover color */
+}
